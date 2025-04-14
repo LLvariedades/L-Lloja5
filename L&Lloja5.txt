@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>L e L Variedades</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primario: '#3ABEFF',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-primario text-white font-sans min-h-screen">
+
+  <header class="bg-white text-primario p-4 shadow-md">
+    <h1 class="text-3xl font-bold text-center">L e L Variedades</h1>
+  </header>
+
+  <main class="p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+    <!-- Luminária Panda -->
+    <div class="bg-white text-black rounded-2xl shadow-lg p-4 flex flex-col items-center">
+      <img src="panda.webp" alt="Luminária Panda" class="rounded-xl w-full h-48 object-contain mb-4">
+      <h2 class="text-xl font-semibold mb-2">Luminária Panda</h2>
+      <p class="mb-2 text-center">Abajur noturno com toque fofo e recarregável. Ideal para decorar e iluminar com estilo.</p>
+      <span class="font-bold text-primario text-lg mb-4">R$ 65,00</span>
+      
+      <!-- Botões de Ação -->
+      <div class="flex gap-4 mb-4">
+        <button class="bg-primario text-white px-4 py-2 rounded-full font-semibold hover:bg-blue-400 transition">
+          Comprar Agora
+        </button>
+        <button class="bg-gray-200 text-primario px-4 py-2 rounded-full font-semibold hover:bg-gray-300 transition flex items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.35 2.7a1 1 0 00.9 1.5H19M7 13l1.5 6h9m-11 0a1 1 0 11-2 0 1 1 0 012 0zm10 0a1 1 0 102 0 1 1 0 00-2 0z" />
+          </svg>
+          Carrinho
+        </button>
+      </div>
+
+      <!-- Formas de Pagamento -->
+      <div class="w-full mt-2">
+        <h3 class="text-lg font-semibold text-center mb-2">Formas de Pagamento</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-sm">
+          <button class="bg-green-500 text-white px-3 py-2 rounded-full hover:bg-green-600 transition">Pix</button>
+          <button class="bg-blue-600 text-white px-3 py-2 rounded-full hover:bg-blue-700 transition">Cartão de Crédito</button>
+          <button class="bg-yellow-500 text-white px-3 py-2 rounded-full hover:bg-yellow-600 transition">Boleto Bancário</button>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="bg-white text-center text-primario p-4 mt-8">
+    &copy; 2025 L e L Variedades. Todos os direitos reservados.
+    <div class="mt-2">
+      <a href="https://wa.me/554188098381" target="_blank" class="inline-block mt-2 px-4 py-2 bg-primario text-white rounded-full shadow hover:bg-blue-400 transition">
+        Fale conosco no WhatsApp
+      </a>
+    </div>
+  </footer>
+
+</body>
+</html>
